@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/text_view"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignBottom="@id/bottom"
+        android:text="S"
+        android:textSize="60dp"
+        android:background="@drawable/oval_background"
+        android:gravity="center"
+        android:textColor="#F00"/>
+
+    <TextView
+        android:id="@+id/text_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="15:05 AM"
+        android:textSize="10sp"/>
+
+    <TextView
+        android:id="@+id/text_from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="From"
+        android:textColor="#000000"
+        android:textSize="28sp"
+        android:drawableLeft="@drawable/ic_baseline_label_important_24"
+        android:layout_toRightOf="@id/text_view"
+        android:layout_marginLeft="10dp"/>
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/text_view"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/text_from">
+        <TextView
+            android:id="@+id/text_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Content..."
+            android:lines="2"
+            android:textSize="24sp"/>
+
+        <ImageButton
+            android:id="@+id/check_important"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:layout_toRightOf="@id/text_content"
+            android:src="@drawable/ic_baseline_star_24"
+            android:background="#FFFFFF"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@id/text_content"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
